@@ -40,8 +40,8 @@ During the course of this program we have developed a set of guidelines and reco
 
 ## Recommendations
 
-1. Something
-2. Something else
+    1. Something
+    2. Something else
 
 # Outputs for 2015-16 
 Standard bibliographic details for publications (peer reviewed or popular), reports, patents or other IP, plus conference presentations, seminars/workshops to science or end user audience, especially where this supports realisation of an impact. Identify any items that are in draft or in press. Must be outputs that contribute directly to the objectives and milestones in your project plan. Note where funding of an output is shared with other projects. 
