@@ -27,7 +27,7 @@ Provide a brief update on progress towards impact during this reporting period. 
 - AgResearch
 - NIWA
 - 
-- Presenttaion at SISSG
+- Presentation at SISSG
 - Presentatation Science Forum
 - Presentation Health Science Forum
 
