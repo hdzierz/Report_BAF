@@ -46,17 +46,19 @@ During the course of this program we have developed a set of guidelines and reco
 # Outputs for 2015-16 
 Standard bibliographic details for publications (peer reviewed or popular), reports, patents or other IP, plus conference presentations, seminars/workshops to science or end user audience, especially where this supports realisation of an impact. Identify any items that are in draft or in press. Must be outputs that contribute directly to the objectives and milestones in your project plan. Note where funding of an output is shared with other projects. 
 
-- Presentation Data Management Workshop
-- Presentation eResearch
-- [Presentatation Science Forum](http://bit.ly/1T3ZjEb)
-- Presentation Health Science Forum
-- Participation in 
-- White Paper
-- Presentations @ UNCC
+### Presentations
+
+- Data Management Workshop
+- eResearch
+- [Science Forum](http://bit.ly/1T3ZjEb)
+- Health Science Forum
+- Symposium at University North Carolina Charlotte
+
+### Reports and Documentation
+
+- Informatics White Paper
 - Proposal for DS
-- iRODS
-- powerPlant v2
-- Data Steward Document
+- Data Steward Role Document
 - Data Management Basics
 - Data Management Plan Document
 - Best practices documents
@@ -64,6 +66,11 @@ Standard bibliographic details for publications (peer reviewed or popular), repo
     - GitHub for analyses
     - Linux Command Line Interface (CLI)
     - RNAseq experiments
+
+### Technologies
+
+- iRODS
+- powerPlant v2
  
 # Glossary
 
