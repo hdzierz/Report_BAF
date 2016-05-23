@@ -48,7 +48,7 @@ Standard bibliographic details for publications (peer reviewed or popular), repo
 - Participation in 
 - White Paper
 - Presentations @ UNCC
-- Proposal for DS
+- Three Proposals for DS (blue berry, k-drive, automation)
 - iRODS
 - powerPlant v2
 - Data Steward Document
