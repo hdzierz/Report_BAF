@@ -36,7 +36,12 @@ Provide a brief update on progress towards impact during this reporting period. 
 # Next steps What are the next steps required to maximise impact?  
 Outline your plan for the next steps in implementing this work and/or addressing scientific questions that remain. Note any risks and how they they will or could be managed. 
 
-Here we shall put recommendations.
+During the course of this program we have developed a set of guidelines and recommendations to improve the success of Plant & Food Research in leveraging data management as an activator of our scientific endeavours. The guidelines exist in the form of best practices and the recommendations are included here.
+
+## Recommendations
+
+1. Something
+2. Something else
 
 # Outputs for 2015-16 
 Standard bibliographic details for publications (peer reviewed or popular), reports, patents or other IP, plus conference presentations, seminars/workshops to science or end user audience, especially where this supports realisation of an impact. Identify any items that are in draft or in press. Must be outputs that contribute directly to the objectives and milestones in your project plan. Note where funding of an output is shared with other projects. 
@@ -53,11 +58,13 @@ Standard bibliographic details for publications (peer reviewed or popular), repo
 - powerPlant v2
 - Data Steward Document
 - Data Management Basics
-- DAta Management Plan Document
-- Best Practices Excel Data
-- Best practices GitHub for analyses and CLI and RNAseq experiments
+- Data Management Plan Document
+- Best practices documents
+    - Excel Data
+    - GitHub for analyses
+    - Linux Command Line Interface (CLI)
+    - RNAseq experiments
  
-
 # Glossary
 
 - iRODS
