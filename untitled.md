@@ -1,3 +1,4 @@
+# Background and Recommendations
 
 
 # Development of Advanced Knowledge, Data management tools and Capability 
@@ -26,31 +27,31 @@ Provide a brief update on progress towards impact during this reporting period. 
 - SCION
 - AgResearch
 - NIWA
-- Software Carpentry
-- Presentation at SISSG
-- [Presentatation Science Forum](http://bit.ly/1T3ZjEb)
+- 
+- Presenttaion at SISSG
+- Presentatation Science Forum
 - Presentation Health Science Forum
 
 
 # Next steps What are the next steps required to maximise impact?  
 Outline your plan for the next steps in implementing this work and/or addressing scientific questions that remain. Note any risks and how they they will or could be managed. 
 
-Recommendations in HERE.
+
 
 # Outputs for 2015-16 
 Standard bibliographic details for publications (peer reviewed or popular), reports, patents or other IP, plus conference presentations, seminars/workshops to science or end user audience, especially where this supports realisation of an impact. Identify any items that are in draft or in press. Must be outputs that contribute directly to the objectives and milestones in your project plan. Note where funding of an output is shared with other projects. 
 
 - Presentation Data Management Workshop
 - Presentation eResearch
-- Data Report
 - Presentatation Science Forum
 - Presentation Health Science Forum
 - Participation in 
 - White Paper
 - Presentations @ UNCC
-- Three Proposals for DS (blue berry, k-drive, automation)
+- Proposal for DS
 - iRODS
 - powerPlant v2
 - Data Steward Document
 - Data Management Basics
+- DAta Management Plan Document
 - Best Practices Excel Data
