@@ -55,3 +55,4 @@ Standard bibliographic details for publications (peer reviewed or popular), repo
 - Data Management Basics
 - DAta Management Plan Document
 - Best Practices Excel Data
+- Best practices GitHub for analyses and CLI and RNAseq experiments
