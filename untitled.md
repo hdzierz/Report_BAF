@@ -43,7 +43,7 @@ Standard bibliographic details for publications (peer reviewed or popular), repo
 
 - Presentation Data Management Workshop
 - Presentation eResearch
-- Presentatation Science Forum
+- [Presentatation Science Forum](http://bit.ly/1T3ZjEb)
 - Presentation Health Science Forum
 - Participation in 
 - White Paper
