@@ -70,7 +70,7 @@ Standard bibliographic details for publications (peer reviewed or popular), repo
 ### Technologies
 
 - iRODS
-- powerPlant v2
+- powerPlant SE
  
 # Glossary
 
