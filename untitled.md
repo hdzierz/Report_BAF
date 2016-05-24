@@ -75,3 +75,6 @@ Standard bibliographic details for publications (peer reviewed or popular), repo
 # Glossary
 
 - iRODS
+- GitHub
+- jekyll
+- powerPlant
