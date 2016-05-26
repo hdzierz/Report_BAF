@@ -2,10 +2,16 @@
 
 
 # Development of Advanced Knowledge, Data management tools and Capability 
+
+Within BAF we endeveoured not only to suggest changes to the PFr data management, but also to implement tools that will enhance data management at PFR. 
+
 State progress in advancing science knowledge, data management tools and/or developing capability during this reporting period. 
 
-- iRODS
-- Best Practices 
+What have we learned:
+
+- iRODS/MetaLnx
+- Best Practices and communication
+- Best practices at UNCC
 - BP in other institutes
 - Data Steward document
 
