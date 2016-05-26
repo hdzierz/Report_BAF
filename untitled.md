@@ -33,7 +33,7 @@ Provide a brief update on progress towards impact during this reporting period. 
 - SCION
 - AgResearch
 - NIWA
-- 
+- Roadshow in June
 - Presentation at SISSG
 - [Presentatation Science Forum](http://bit.ly/1T3ZjEb)
 - Presentation Health Science Forum
