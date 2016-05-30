@@ -14,6 +14,13 @@ We would like to take the opportunity and repeat some of our recommendations:
 - through [principles](https://github.com/PlantandFoodResearch/BestPractices/blob/master/Best_Practice_Documents.md), 
 - to [practice](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/BestPracticesForData.md) 
 - and [specifics](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/best_practices_excel_data_file.md)
+- The iRODS proof-of-concept instance has been created. Coupled with this is the Metalnx web interface for iRODS. 
+- A Globus end-point has been created, also coupled with the iRODS proof-of-concept instance. An additional tool has been developed to allow new users to register for access to the iRODS instance.
+
+
+- Data added to the file-system via iRODS is owned by the iRODS-server user. This will present a problem if this method is used to add data to the system. Hence adding data is best achieved via traditional file-system methods, after which the data can be added to the iRODS catalogue. The 2GB upload limit for the Metalnx interface is another good reason to use the file-system to add data. A best-practice should be created to cover this methodology.
+- Metalnx metadata templates can be 'stacked' (much like the [CSS](https://www.w3.org/Style/CSS/Overview.en.html) philosophy) allowing generic templates and specific template to be combined in a logical manner.
+- Globus file transfer is extremely efficient compared to traditional data transfer speeds via Plant and Food Research's internet connection. Globus is more than 100-times faster than the standard internet connection for file transfer.
 
 ## Milestone 7
 
@@ -58,7 +65,11 @@ We have also discovered that it was imperative to upgrade powerPlant to a newer 
 *   Increased awareness of the importance of data and its efficient management to PFR
 *   Agreeing on, and formalising. the principles and messages constitutes a major step forward.
 *   It is now possible to work with clear purpose towards implementing these guiding principles
-
+- Data can be transferred to/form PFR servers at much higher rates with Globus
+- iRODS capabilities and be tested
+- Metalnx metadata templates can be created
+- Data can be catalogued in iRODS for testing
+- The testing phase for iRODS data cataloguing, metadata templating, and Globus data transfers is complete.
 
 -	What is the impact
 
@@ -173,6 +184,9 @@ At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He
 - Presentation at eResearch " Bringing New Zealand’s eResearch in parity with that established by North America’s Human Genomics Community"
 - Liaise with IKS and powerPlant manaer
 - Presenttaion on Roadshow June 2016 (6x)
+- Connections with UNCC bioinformatics and information technology staff were made during the research exchange last August 2015. This provided us with further expertise in the implementation of iRODS, and philosophies of data/metadata management.
+- Vladimir Mencl (NeSI) was contracted to install the iRODS proof of concept instance, he remains a point of contact for technical expertise in this area.
+- Ben Warren connected with Steve Worth and the Metalnx development team during the BioIT World 2016 conference in Boston (April 2016). I provided feedback to them directly regarding Metalnx features and development. This solidified our relationship, improving PFR's standing as an important customer for the delivery of the Metalnx software, and also as a resource for testing/development for Metalnx in future.
 
 
 # Next steps What are the next steps required to maximise impact?  
@@ -183,6 +197,8 @@ At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He
 * Investigate ways of making Excel datafiles discoverable (e.g., a PFR-wide experiment database, integrating with [iRODS](http://irods.org/), text-mining)
 * On-going development of guidelines via the git model
 * Investigation of Github Enterprise Edition
+* [Milestone 5.3](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/tree/master/doc/milestones/milestone5#milestone-53) embodies the next phase in this project. This entails the implementation of a production-level iRODS server instance, with the first official release of the Metalnx interface (version 1.0). We have yet to decide if the Globus end-point should reside on this iRODS instance, or be a separate entity.
+* An ontology of data-types and associated concepts will be created to guide metadata management implementation, specifically metadat templates for the Metalnx interface.
 
 - Continue exploring alternatives for hybrid-cloud adoption
   - Re-evaluate the feasibility of OpenStack
@@ -199,8 +215,10 @@ At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He
 *   Presentations including the Software Carpentry workshops, Best-Practice workshops, and international collaboration such as was done with UNCC and NC-State University in the North Carolina Biotechnology Corridor, USA
 *   The documents referenced in the first section above
 *   A growing list of 'Best Practice" documents across multiple domains that is addressing the question of "How do we do that here at PFR?"
-
-## Outputs for 2015-16
+* Presentation at the UNCC Research Exchange covering metadata/data management, solutions and principles.
+* Feedback from the CHIPs team on the Metalnx user interface, metadata management policies, and data types produced by PFR scientists.
+* The [process](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/blob/master/doc/milestones/milestone5/pfr-irods-test-setup-notes.md) developed for implementing iRODS server provided by Vladimir Mencl.
+* A [summary of Milestone 5.2](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/blob/master/doc/milestones/milestone5/summary_milestone_5.2.md), which includes decisions made and actions taken to complete this milestone.
 
 -	Presentations
   - At UNCC: ["The Neolution of the Machines"](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/blob/master/doc/presentations/eric/The%20Neolution%20of%20the%20Machines.pdf)
