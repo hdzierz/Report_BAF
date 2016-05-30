@@ -1,13 +1,51 @@
 # Background and Recommendations
 
+We would like to take the opportunity and repeat some of our recommendations:
+
+- Best Practices
+- Be
+
 
 # Development of Advanced Knowledge, Data management tools and Capability 
 
-Within BAF we endeveoured not only to suggest changes to the PFr data management, but also to implement tools that will enhance data management at PFR. 
 
-State progress in advancing science knowledge, data management tools and/or developing capability during this reporting period. 
+*   Hierarchy of best data-management and best-practice documents developed from 
+- [policy](https://iplant.plantandfood.co.nz/project/datamgmt/Documents/PFR%20Data%20Management%20Policy%20based%20on%20Lincoln%20Hub%20Template.docx), 
+- through [principles](https://github.com/PlantandFoodResearch/BestPractices/blob/master/Best_Practice_Documents.md), 
+- to [practice](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/BestPracticesForData.md) 
+- and [specifics](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/best_practices_excel_data_file.md)
 
-What have we learned:
+## Milestone 7
+
+Milestone 7 is both a milestone within the Better Analysis Faster project, as well as a codename for PFR's powerPlant computational environment. As a purely IT infrastructure milestone, it does not depend on the development of management tools but rather on the adoption, configuration, administration, and coordination of multiple IT components.
+
+In Milestone 7.1, we describe a vision for Computational Science in which users are able to access self-contained units of compute in the form of disposable Virtual Machines, on a self-service fashion. This effectively means adopting cloud type services, as well as moving powerPlant towards IaaS (Infrastructure as a Service).
+
+With Milestone 7.2, the goal is to provide data analysis tools commonly used in powerPlant as containerised micro-services which can be built, versioned, shared, and re-used; with complete independence from the underlying Operating System. This would allow the scientific community to easily re-create and reproduce the computational environment used for a given research project, and would greatly simplify the peer-review process.
+
+Multiple tools have been considered for exploration:
+
+- Milestone 7.1
+  - VMware vCloud Suite
+  - OpenStack
+  - OpenNebula
+- Milestone 7.2
+  - Docker
+  - Singularity
+
+They are explored in detail in the *Progress Towards Impact* section below.
+
+-   What have we learned?
+
+Vendor support will be critical for the succesful implementation of either sub-milestone. This should translate not only in the adoption of IT best practices, but also in the avoidance of bespoke or custom-tailored solutions that would hinder portability and collaboration with external organisations.
+
+During this period, it became clear that scientists will require a mechanism to publish the versioned images of either Virtual Machines or Containers used during analysis. It is already common practice to submit the raw data to public databases to facilitate the peer-review process. Demanding the exact copy of the analysis environment as well,  is a natural extension of this idea.
+
+We have also discovered that it was imperative to upgrade powerPlant to a newer Operating System if we were to succesfully test some of the tools listed above. Container technologies are bleeding edge and call for newer Linux kernels than the one powerPlant was running on. A considerable amount of time and resources were spent during this period to make this upgrade happen.
+
+
+
+
 
 - iRODS/MetaLnx
 - Best Practices and communication
@@ -15,42 +53,162 @@ What have we learned:
 - BP in other institutes
 - Data Steward document
 
-# Progress Towards Impact  
-Provide a brief update on progress towards impact during this reporting period. If relevant, provide a brief note on anything that was not anticipated and which has or is likely to significantly delay the completion of planned milestones (and outputs, outcomes and impacts) – what happened and how have you responded to it.
+# Progress Towards Impact 
 
-- ?
+*   Increased awareness of the importance of data and its efficient management to PFR
+*   Agreeing on, and formalising. the principles and messages constitutes a major step forward.
+*   It is now possible to work with clear purpose towards implementing these guiding principles
 
+
+-	What is the impact
+
+Both sub-milestones have the potential to change the way Science is done, not just at PFR but also in the wider scientific community. Reproducibility is a hard problem to solve in computational science, particularly in a world with faster moving targets in terms of software delivery. By suggesting a working model that successfully contributes to simplify the problem, PFR would be in a leading position in the global community.
+
+-	What progress have we made?
+
+### Milestone 7.1
+#### VMware vCloud Suite
+
+**URL:** https://www.vmware.com/products/vcloud-suite
+
+PFR's Virtual Infrastructure uses the VMware Hypervisor. It made sense therefore to explore this vendor's offerings in the self-service space. VMware provides a suite called vCloud. VMware vCloud Suite features components for cloud services provisioning, cloud services monitoring and cloud services chargeback, a self-service portal, an IT service catalog, and a policy engine. It comes in Standard, Advanced and Enterprise versions.
+
+Advantages:
+- Knowledge within PFR with VMware's products
+- Builds on top of existing PFR components
+- Good vendor reputation and support paths
+
+Disadvantages:
+- High cost
+- Locks users to the VMware Hypervisor only
+- No public cloud integration
+
+During PFR's implementation of our secondary DataCenter in Waikato, we had the opportunity to learn about both the cost and limitations of the vCloud Suite. While self-service was not explored as a requirement for that project, a decision was made against the Suite purely based on its high cost.
+
+In the context of Milestone 7.1, vCloud Suite lacks multi-hypervisor support which we consider a highly desirable feature. VMware tackles this and other limitations with their next tier product (VMware vRealize). We decided against exploring vRealize as we considered it unlikely to be cost effective.
+
+#### OpenStack
+
+**URL:** https://www.openstack.org/
+
+OpenStack is a free and open-source software platform for cloud computing, and a competing alternative to VMware's product portfolio. As is common in the open source software world, the product itself is free (both as in freedom and as in _free beer_) and multiple companies can provide support for it. The OpenStack Foundation is the non-profit organisation that manages the OpenStack product. Over 500 companies are currently part of this organisation.
+
+Advantages:
+- Knowledge within PFR of open-source solutions
+- Can build on top of existing PFR components
+- Good vendor reputation and support paths
+
+Disadvantages:
+- High complexity
+- Heterogeneous solution which can lead to fragmentation
+- Six-monthly release cycle
+
+RedHat and Canonical both offer products based on OpenStack. Since PFR already has commercial relations with the RedHat we invited them to a meeting. On November 27th 2015, Ben Warren and Eric Burgueño met with Steven Ellis and Mike Hepburn. After discussing our environment, requirements, and future vision; RedHat suggested that OpenStack was too complex of a solution for PFR, and that we would require to at least double our FTE count (from 2 to 4 FTEs) to support it accordingly. RedHat suggested we look into another product of theirs: CloudForms. We decided to take their suggestion on board for further exploration.
+
+#### OpenNebula
+
+**URL:** http://opennebula.org/
+
+OpenNebula is an alternative cloud computing platform to OpenStack, that is also free and open-source software. OpenNebula toutes itself as an open-source effort focused on user needs, while considering OpenStack a vendor-driven effort focused on the need of other vendors.
+
+Advantages:
+- Knowledge within PFR of open-source solutions
+- Can build on top of existing PFR components
+- Simpler setup and maintenance than OpenStack
+
+Disadvantages:
+- Fewer support alternatives
+- Unknown market share
+
+PFR deployed a PoC installation of OpenNebula using spare hardware with limited resources. The trial was operational for aproximately eight months, and allowed at least three staff members to explore its functionality in a "close to production" fashion.
+
+### Milestone 7.2
+#### Docker
+
+**URL:** https://www.docker.com
+
+Docker allows a user or an administrator to package an application with all of its dependencies, into a standardized unit which can be universally deployed. It does this by leveraging a combination of containerisation and resource management technologies present in modern Linux kernels. The quick speed of adoption of Docker by the IT industry can be attributed to the simplicity it brought to the management of containers.
+
+Advantages:
+- Knowledge within PFR of open-source solutions
+- Can build on top of existing PFR components
+- Good vendor reputation and support paths
+- High market share
+
+Disadvantages:
+- Rapidly changing and still maturing technology
+- Somewhat high complexity
+- Security and Operational Management challenges
+- Built by and for the Web Hosting industry
+
+PFR has adopted Docker in a PoC basis to further investigate how best to adapt it to its needs. At the present, 17 PFR users have been running Docker containers. We expect this number to increase with the release of powerPlant SE.
+
+#### Singularity
+
+**URL:** http://singularity.lbl.gov/
+
+Singularity is another container management toolkit, which can be used to encapsulate a system environment in such a manner to make it portable between systems. It distinguishes itself from Docker in that the two were created with different purposes in mind. From the [Singularity FAQ](http://singularity.lbl.gov/docs_faq.html)
+
+> Docker has been used for a variety of purposes, but it is designed as a platform to provide replicatable, network service virtualation. Because of this basic assumption and design model, it makes it difficult to implement on shared HPC platforms (and thus Singularity was born). Additionally, Docker supports the notion of emulating full operating system enviornments including user context escalation.
+
+> Singularity on the other hand does not support user escalation or context changes, nor does it have a root owned daemon process mananging the container namespaces. It also exec's the process workflow inside the container and seemlessly redirects all IO in and out of the container directly between the enviornments. This makes doing things like MPI, X11 forwarding, and other kinds of work tasks trivial for Singularity.
+
+During our Docker trials, the issues of [privilege escalation](https://github.com/PlantandFoodResearch/powerPlant/issues/315) and [complexity for end users](https://github.com/PlantandFoodResearch/powerPlant/issues/422#issuecomment-214544621) came up. Singularity was discovered as a potential solution for these problems, but we only knew about its existence in May 23rd 2016. Further research should go into it.
+
+## Communication, Connections and Extension Activities
+
+As mentioned above, we were in touch with RedHat to discuss the feasibility of OpenStack for our environment. We have also touched on the topic of containers with them but we subjected follow-up discussions to the upgrade of our powerPlant cluster.
+
+At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He mentioned the existence of a proposal to create a nation-wide pan-institution research network based on OpenStack. While the details of his proposal are confidential, it was implied that it hadn't gain enough traction nor consideration.
 
 # Communication, Connections and Extension Activities List activities during the reporting period directed towards your key stakeholders 
-(e.g. reports, meetings, other deliverables and interactions).
 
-- UNCC
-- Meetings
-- IKS
-- SGLs
-- GMs
-- CIO
-- SCION
-- AgResearch
-- NIWA
-- Roadshow in June
-- Presentation at SISSG
+*   Liaised with other interested teams (e.g., [Achieving Collaborative Data Management](https://github.com/PlantandFoodResearch/CollaborativeDataManagement) and [biometrics](https://iplant.plantandfood.co.nz/biometrics)) and individuals
+* Socialised the ideas informally and via tools such as [iPlant news](https://iplant.plantandfood.co.nz/bg/Pages/BestpracticesExceldatafiles.aspx)
 - [Presentatation Science Forum](http://bit.ly/1T3ZjEb)
-- Presentation Health Science Forum
+- [Presentation SISSG](https://www.swipe.to/8227ct)
+- [Presentation Food Innovation](https://www.swipe.to/7988c)
+- Meeting about Ways of Working Auckland
+- Meeting PGP
+- Presentation at eResearch " Bringing New Zealand’s eResearch in parity with that established by North America’s Human Genomics Community"
+- Liaise with IKS and powerPlant manaer
+- Presenttaion on Roadshow June 2016 (6x)
 
 
 # Next steps What are the next steps required to maximise impact?  
-Outline your plan for the next steps in implementing this work and/or addressing scientific questions that remain. Note any risks and how they they will or could be managed. 
 
-During the course of this program we have developed a set of guidelines and recommendations to improve the success of Plant & Food Research in leveraging data management as an activator of our scientific endeavours. The guidelines exist in the form of best practices and the recommendations are included here.
+* Continue building the foundation of best-practices across multiple content area
+* Training, dissemination and implementation, using the best-practices a the "back-end"
+* Finalise deployment of git documents to a PFR-wide available webpage using [Jekyll](https://jekyllrb.com/)
+* Investigate ways of making Excel datafiles discoverable (e.g., a PFR-wide experiment database, integrating with [iRODS](http://irods.org/), text-mining)
+* On-going development of guidelines via the git model
+* Investigation of Github Enterprise Edition
 
-## Recommendations
+- Continue exploring alternatives for hybrid-cloud adoption
+  - Re-evaluate the feasibility of OpenStack
+  - Consider exploring CloudForms
+  - Continue testing OpenNebula
+  - Start exploring pathways to adopt the public cloud
+- Deepen the usage of Docker where appropriate in our research environment
+- Explore the feasibility of Singularity
 
-- Something
-- Something else
 
 # Outputs for 2015-16 
-Standard bibliographic details for publications (peer reviewed or popular), reports, patents or other IP, plus conference presentations, seminars/workshops to science or end user audience, especially where this supports realisation of an impact. Identify any items that are in draft or in press. Must be outputs that contribute directly to the objectives and milestones in your project plan. Note where funding of an output is shared with other projects. 
+
+*   Reshaping of the high performance compute environment at PFR to be compatible with the new vision (PowerPlant Release 2)
+*   Presentations including the Software Carpentry workshops, Best-Practice workshops, and international collaboration such as was done with UNCC and NC-State University in the North Carolina Biotechnology Corridor, USA
+*   The documents referenced in the first section above
+*   A growing list of 'Best Practice" documents across multiple domains that is addressing the question of "How do we do that here at PFR?"
+
+## Outputs for 2015-16
+
+-	Presentations
+  - At UNCC: ["The Neolution of the Machines"](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/blob/master/doc/presentations/eric/The%20Neolution%20of%20the%20Machines.pdf)
+  - At LCA2016: ["The life of a sysadmin in a research environment"](http://sysadmin.miniconf.org/2016/lca2016-eric_burgueno-the_life_of_a_sysadmin_in_a_research_environment.pdf) ([Video](https://youtu.be/SiSY1b0am5w))
+
+-	Proposal and Planning Documents
+  - [powerPlant SE proposed Architecture](https://github.com/PlantandFoodResearch/powerPlant/blob/meta/proposals/CentOS%207%20architecture.md)
+  - [Hybrid Cloud Support matrix](https://github.com/PlantandFoodResearch/powerPlant/blob/meta/proposals/Hybrid%20Cloud%20Support%20matrix.xlsx?raw=true)
 
 ### Presentations
 
@@ -62,9 +220,12 @@ Standard bibliographic details for publications (peer reviewed or popular), repo
 
 ### Reports and Documentation
 
-- Informatics White Paper
+- Informatics White Paper 
 - Travel report UNCC
 - Proposal for DS
+  - The K-Drive
+  - hmhmhm
+  - Blue Berry
 - Data Steward Role Document
 - Data Management Basics
 - Data Management Plan Document
@@ -85,3 +246,5 @@ Standard bibliographic details for publications (peer reviewed or popular), repo
 - GitHub
 - jekyll
 - powerPlant
+- RNAseq
+- 
