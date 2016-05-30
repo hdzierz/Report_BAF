@@ -167,16 +167,19 @@ During our Docker trials, the issues of [privilege escalation](https://github.co
 
 # Next steps What are the next steps required to maximise impact?  
 
-* Continue building the foundation of best-practices across multiple content area
-* Training, dissemination and implementation, using the best-practices a the "back-end"
+* Create a PFR wide strategy supported by our white paparer and recommendations of the Collaborative Data Management project
+* PFR needs change management plan following e.g. the (10 principles of change management)[http://www.strategy-business.com/article/rr00006?gko=643d0].
+* This change process should comprise a digital content strategy.
+* Thes principles state that the change must be supported by the upper management and needs to incorporate the current cultural setup. 
+* Part of this change management should be to continue building the foundation of best-practices across multiple content area.
+* Training, dissemination and implementation, using the best-practices a the "back-end" will be essential for better data management practices at PFR.
 * Finalise deployment of git documents to a PFR-wide available webpage using [Jekyll](https://jekyllrb.com/)
 * Investigate ways of making Excel datafiles discoverable (e.g., a PFR-wide experiment database, integrating with [iRODS](http://irods.org/), text-mining)
-* On-going development of guidelines via the git model
+* On-going development of guidelines and best practices via the git model. This will have to be advertised by the management.
 * Investigation of Github Enterprise Edition
-* [Milestone 5.3](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/tree/master/doc/milestones/milestone5#milestone-53) embodies the next phase in this project. This entails the implementation of a production-level iRODS server instance, with the first official release of the Metalnx interface (version 1.0). We have yet to decide if the Globus end-point should reside on this iRODS instance, or be a separate entity.
-* An ontology of data-types and associated concepts will be created to guide metadata management implementation, specifically metadat templates for the Metalnx interface.
-* Complete the production implementation of iRODS+Metalnx, and possibly Globus.
-* Initiate the ontology of powerPlant input data-types.
+* [Milestone 5.3](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/tree/master/doc/milestones/milestone5#milestone-53) embodies the next phase in developing powerPlant SE further. This entails the implementation of a production-level iRODS server instance, with the first official release of the Metalnx interface (version 1.0). We have yet to decide if the Globus end-point should reside on this iRODS instance, or be a separate entity.
+* An ontology of data-types and associated concepts will be continued to guide metadata management implementation, specifically metadat templates for the Metalnx interface.
+* Initiate the ontology of powerPlant input data-types to support intiatives around a digital content stragety.
 * Create and/or auto-generate metadata for existing data in powerPlant input data area. Beginning with the CHIPs team's _Malus domestica_ data.
 - Continue exploring alternatives for hybrid-cloud adoption
   - Re-evaluate the feasibility of OpenStack
