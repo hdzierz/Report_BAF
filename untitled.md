@@ -45,24 +45,25 @@ They are explored in detail in the *Progress Towards Impact* section below.
 
 # Progress Towards Impact 
 
-*   Increased awareness of the importance of data and its efficient management to PFR
-*   Agreeing on, and formalising. the principles and messages constitutes a major step forward.
-*   It is now possible to work with clear purpose towards implementing these guiding principles
-- Data can be transferred to/form PFR servers at much higher rates with Globus
+- Increased awareness of the importance of data and its efficient management to PFR
+- Agreeing on, and formalising. the principles and messages constitutes a major step forward.
+- It is now possible to work with clear purpose towards implementing these guiding principles
+- Data can be transferred to/form PFR servers at much higher rates with Globus and powerPlant
 - iRODS capabilities and be tested
 - Metalnx metadata templates can be created
 - Data can be catalogued in iRODS for testing
-outpu- The testing phase for iRODS data cataloguing, metadata templating, and Globus data transfers is complete.
+- The testing phase for iRODS data cataloguing, metadata templating, and Globus data transfers is complete.
 - The impact of the completion of this milestone will be a searchable metadata catalogue of powerPlant _input_ data. This has progressed as far as the proof-of-concept (see the [milestone 5.2 report](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/tree/master/doc/milestones/milestone5/milestone_5.2_report.md)).
 
-
--	What is the impact
+**What is the impact?**
 
 Both sub-milestones have the potential to change the way Science is done, not just at PFR but also in the wider scientific community. Reproducibility is a hard problem to solve in computational science, particularly in a world with faster moving targets in terms of software delivery. By suggesting a working model that successfully contributes to simplify the problem, PFR would be in a leading position in the global community.
 
--	What progress have we made?
 
-### Milestone 7.1
+**Milestone 7**
+
+**What progress have we made?**
+
 #### VMware vCloud Suite
 
 **URL:** https://www.vmware.com/products/vcloud-suite
@@ -153,9 +154,8 @@ During our Docker trials, the issues of [privilege escalation](https://github.co
 
 ## Communication, Connections and Extension Activities
 
-As mentioned above, we were in touch with RedHat to discuss the feasibility of OpenStack for our environment. We have also touched on the topic of containers with them but we subjected follow-up discussions to the upgrade of our powerPlant cluster.
-
-At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He mentioned the existence of a proposal to create a nation-wide pan-institution research network based on OpenStack. While the details of his proposal are confidential, it was implied that it hadn't gain enough traction nor consideration.
+- As mentioned above, we were in touch with RedHat to discuss the feasibility of OpenStack for our environment. We have also touched on the topic of containers with them but we subjected follow-up discussions to the upgrade of our powerPlant cluster.
+- At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He mentioned the existence of a proposal to create a nation-wide pan-institution research network based on OpenStack. While the details of his proposal are confidential, it was implied that it hadn't gain enough traction nor consideration.
 
 # Communication, Connections and Extension Activities List activities during the reporting period directed towards your key stakeholders 
 
@@ -165,10 +165,8 @@ At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He
 - [Presentation SISSG](https://www.swipe.to/8227ct)
 - [Presentation Food Innovation](https://www.swipe.to/7988c)
 - Meeting about Ways of Working Auckland
-- Meeting PGP
-- Presentation at eResearch " Bringing New Zealand’s eResearch in parity with that established by North America’s Human Genomics Community"
-- Liaise with IKS and powerPlant manaer
-- Presenttaion on Roadshow June 2016 (6x)
+- Presentation at eResearch and lioaise with hmhmhm from Niwa, Nauman Maqbook from AgResearch, and Tatiana Lomasko form Scion. This provided a good echange of ideas around data management and resukted in a collaboration for an MBIE bid around nanao satellite data aquisition.
+- Presenttaion on Roadshow June 2016 (6x) to socialise our ideas.
 - Connections with UNCC bioinformatics and information technology staff were made during the research exchange last August 2015. This provided us with further expertise in the implementation of iRODS, and philosophies of data/metadata management.
 - Vladimir Mencl (NeSI) was contracted to install the iRODS proof of concept instance, he remains a point of contact for technical expertise in this area.
 - Ben Warren connected with Steve Worth and the Metalnx development team during the BioIT World 2016 conference in Boston (April 2016). I provided feedback to them directly regarding Metalnx features and development. This solidified our relationship, improving PFR's standing as an important customer for the delivery of the Metalnx software, and also as a resource for testing/development for Metalnx in future.
@@ -241,17 +239,12 @@ At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He
     - GitHub for analyses
     - Linux Command Line Interface (CLI)
     - RNAseq experiments
-
-### Technologies
-
-- iRODS
-- powerPlant SE
  
 # Glossary
 
-- iRODS
-- GitHub
-- jekyll
-- powerPlant
-- RNAseq
+- iRODS: The Integrated Rule-Oriented Data System (iRODS) is open source data management software used by research organizations and government agencies worldwide. (http://irods.org/)
+- GitHub: Source code verison management and moch more (github.com)
+- jekyll: A website generator from texts like GitHub Readmes
+- powerPlant: PFR's powerful computer cluster and more (powerplant.pfr.co.nz)
+- RNAseq: RNA next generatino sequencing project including gene expression analyses
 - 
