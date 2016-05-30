@@ -1,23 +1,15 @@
-# Background and Recommendations
-
-We would like to take the opportunity and repeat some of our recommendations:
-
-- Best Practices
-- Be
-
-
 # Development of Advanced Knowledge, Data management tools and Capability 
 
+**Milestone 4**
+- A hierarchy of best data-management and best-practice documents were developed from 
+  - [policy](https://iplant.plantandfood.co.nz/project/datamgmt/Documents/PFR%20Data%20Management%20Policy%20based%20on%20Lincoln%20Hub%20Template.docx), 
+  - through [principles](https://github.com/PlantandFoodResearch/BestPractices/blob/master/Best_Practice_Documents.md), 
+  - to [practice](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/BestPracticesForData.md) 
+  - and [specifics](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/best_practices_excel_data_file.md)
 
-*   Hierarchy of best data-management and best-practice documents developed from 
-- [policy](https://iplant.plantandfood.co.nz/project/datamgmt/Documents/PFR%20Data%20Management%20Policy%20based%20on%20Lincoln%20Hub%20Template.docx), 
-- through [principles](https://github.com/PlantandFoodResearch/BestPractices/blob/master/Best_Practice_Documents.md), 
-- to [practice](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/BestPracticesForData.md) 
-- and [specifics](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/best_practices_excel_data_file.md)
+**Milestone 5**
 - The iRODS proof-of-concept instance has been created. Coupled with this is the Metalnx web interface for iRODS. 
 - A Globus end-point has been created, also coupled with the iRODS proof-of-concept instance. An additional tool has been developed to allow new users to register for access to the iRODS instance.
-
-
 - Data added to the file-system via iRODS is owned by the iRODS-server user. This will present a problem if this method is used to add data to the system. Hence adding data is best achieved via traditional file-system methods, after which the data can be added to the iRODS catalogue. The 2GB upload limit for the Metalnx interface is another good reason to use the file-system to add data. A best-practice should be created to cover this methodology.
 - Metalnx metadata templates can be 'stacked' (much like the [CSS](https://www.w3.org/Style/CSS/Overview.en.html) philosophy) allowing generic templates and specific template to be combined in a logical manner.
 - Globus file transfer is extremely efficient compared to traditional data transfer speeds via Plant and Food Research's internet connection. Globus is more than 100-times faster than the standard internet connection for file transfer.
@@ -25,7 +17,7 @@ We would like to take the opportunity and repeat some of our recommendations:
 - Data stewards will need to be trained to use the iRODS metadata catalogue, both via the Metalnx interface, and via the iCommands (Linux command line).
 
 
-## Milestone 7
+**Milestone 7**
 
 Milestone 7 is both a milestone within the Better Analysis Faster project, as well as a codename for PFR's powerPlant computational environment. As a purely IT infrastructure milestone, it does not depend on the development of management tools but rather on the adoption, configuration, administration, and coordination of multiple IT components.
 
@@ -35,33 +27,21 @@ With Milestone 7.2, the goal is to provide data analysis tools commonly used in 
 
 Multiple tools have been considered for exploration:
 
-- Milestone 7.1
-  - VMware vCloud Suite
-  - OpenStack
-  - OpenNebula
-- Milestone 7.2
-  - Docker
-  - Singularity
+- Virtual computing provision platforms
+ - VMware vCloud Suite
+ - OpenStack
+ - OpenNebula
+- Containerisation
+ - Docker
+ - Singularity
 
 They are explored in detail in the *Progress Towards Impact* section below.
 
--   What have we learned?
+**What have we learned?**
 
-Vendor support will be critical for the succesful implementation of either sub-milestone. This should translate not only in the adoption of IT best practices, but also in the avoidance of bespoke or custom-tailored solutions that would hinder portability and collaboration with external organisations.
-
-During this period, it became clear that scientists will require a mechanism to publish the versioned images of either Virtual Machines or Containers used during analysis. It is already common practice to submit the raw data to public databases to facilitate the peer-review process. Demanding the exact copy of the analysis environment as well,  is a natural extension of this idea.
-
-We have also discovered that it was imperative to upgrade powerPlant to a newer Operating System if we were to succesfully test some of the tools listed above. Container technologies are bleeding edge and call for newer Linux kernels than the one powerPlant was running on. A considerable amount of time and resources were spent during this period to make this upgrade happen.
-
-
-
-
-
-- iRODS/MetaLnx
-- Best Practices and communication
-- Best practices at UNCC
-- BP in other institutes
-- Data Steward document
+- Vendor support will be critical for the succesful implementation of either sub-milestone. This should translate not only in the adoption of IT best practices, but also in the avoidance of bespoke or custom-tailored solutions that would hinder portability and collaboration with external organisations.
+- During our investigations, it became clear that scientists will require a mechanism to publish the versioned images of either Virtual Machines or Containers used during analysis. It is already common practice to submit the raw data to public databases to facilitate the peer-review process. Demanding the exact copy of the analysis environment as well,  is a natural extension of this idea.
+- We have also discovered that it was imperative to upgrade powerPlant to a newer Operating System if we were to succesfully test some of the tools listed above. Container technologies are bleeding edge and call for newer Linux kernels than the one powerPlant was running on. A considerable amount of time and resources were spent during this period to make this upgrade happen.
 
 # Progress Towards Impact 
 
@@ -72,7 +52,7 @@ We have also discovered that it was imperative to upgrade powerPlant to a newer 
 - iRODS capabilities and be tested
 - Metalnx metadata templates can be created
 - Data can be catalogued in iRODS for testing
-- The testing phase for iRODS data cataloguing, metadata templating, and Globus data transfers is complete.
+outpu- The testing phase for iRODS data cataloguing, metadata templating, and Globus data transfers is complete.
 - The impact of the completion of this milestone will be a searchable metadata catalogue of powerPlant _input_ data. This has progressed as far as the proof-of-concept (see the [milestone 5.2 report](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/tree/master/doc/milestones/milestone5/milestone_5.2_report.md)).
 
 
