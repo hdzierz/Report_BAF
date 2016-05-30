@@ -1,5 +1,11 @@
 # Development of Advanced Knowledge, Data management tools and Capability 
 
+**Milestone 1**
+
+**Milestone 2**
+
+**Milestone 3**
+
 **Milestone 4**
 
 - A hierarchy of best data-management and best-practice documents were developed from [policy](https://iplant.plantandfood.co.nz/project/datamgmt/Documents/PFR%20Data%20Management%20Policy%20based%20on%20Lincoln%20Hub%20Template.docx) through [principles](https://github.com/PlantandFoodResearch/BestPractices/blob/master/Best_Practice_Documents.md) to [practice](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/BestPracticesForData.md) and [specifics](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/best_practices_excel_data_file.md)
@@ -14,6 +20,8 @@
 - A decision has been made to allow read/write access to all storage data from iRODS. This will be further controlled via the iRODS user management itself, which will leverage the existing POSIX user/group permissions.
 - Data stewards will need to be trained to use the iRODS metadata catalogue, both via the Metalnx interface, and via the iCommands (Linux command line).
 
+
+**Milestone 6**
 
 **Milestone 7**
 
