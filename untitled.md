@@ -1,17 +1,6 @@
 # Development of Advanced Knowledge, Data management tools and Capability 
 
-**Milestone 1**
-
-**Milestone 2**
-
-**Milestone 3**
-
-**Milestone 4**
-
 - A hierarchy of best data-management and best-practice documents were developed from [policy](https://iplant.plantandfood.co.nz/project/datamgmt/Documents/PFR%20Data%20Management%20Policy%20based%20on%20Lincoln%20Hub%20Template.docx) through [principles](https://github.com/PlantandFoodResearch/BestPractices/blob/master/Best_Practice_Documents.md) to [practice](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/BestPracticesForData.md) and [specifics](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/best_practices_excel_data_file.md)
-
-**Milestone 5**
-
 - The iRODS proof-of-concept instance has been created. Coupled with this is the Metalnx web interface for iRODS. 
 - A Globus end-point has been created, also coupled with the iRODS proof-of-concept instance. An additional tool has been developed to allow new users to register for access to the iRODS instance.
 - Data added to the file-system via iRODS is owned by the iRODS-server user. This will present a problem if this method is used to add data to the system. Hence adding data is best achieved via traditional file-system methods, after which the data can be added to the iRODS catalogue. The 2GB upload limit for the Metalnx interface is another good reason to use the file-system to add data. A best-practice should be created to cover this methodology.
@@ -20,10 +9,9 @@
 - A decision has been made to allow read/write access to all storage data from iRODS. This will be further controlled via the iRODS user management itself, which will leverage the existing POSIX user/group permissions.
 - Data stewards will need to be trained to use the iRODS metadata catalogue, both via the Metalnx interface, and via the iCommands (Linux command line).
 
-
-**Milestone 6**
-
 **Milestone 7**
+
+This milestone has become part of BAF during project lifetime. WE tehrefore describe this milestine in more detail
 
 Milestone 7 is both a milestone within the Better Analysis Faster project, as well as a codename for PFR's powerPlant computational environment. As a purely IT infrastructure milestone, it does not depend on the development of management tools but rather on the adoption, configuration, administration, and coordination of multiple IT components.
 
@@ -51,20 +39,17 @@ They are explored in detail in the *Progress Towards Impact* section below.
 
 # Progress Towards Impact 
 
-- Increased awareness of the importance of data and its efficient management to PFR
-- Agreeing on, and formalising. the principles and messages constitutes a major step forward.
-- It is now possible to work with clear purpose towards implementing these guiding principles
-- Data can be transferred to/form PFR servers at much higher rates with Globus and powerPlant
-- iRODS capabilities and be tested
-- Metalnx metadata templates can be created
-- Data can be catalogued in iRODS for testing
+- The largest impct of this project is the enhancement of communicatio between the research community and IKS. Particulalry the travel to North Carolina brought these two groups much closer together. A good sign was that Eric Burgeneo brought milestone 7 to the project which will make a big diference to how computational research ins done at PFR.
+- WE also achieved an increased awareness of the importance of data and its efficient management to PFR. This item is hard to prove. WE have to rely on th feedback we get from the reearch community which has only been positive so far.
+- Agreeing on, and formalising the principles and messages constitutes a major step forward.
+- Following these pribicples will make it now possible to work with clear purpose towards implementing these guiding principles.
+- The implementation of a Globus hub as well as powerPlant SE allows now to transfer data to/form PFR servers at much higher rates as from a user's desktop (up to 10-15MB/sec instead of 200-300KB/s).
+- An iRODS instance has been created for better data management. We obtained hmhm of capabilities by dollborating with NeSI
+- With the einstallation of Metalnx we can now creae metadata templates. These templates will help PFR to collect meta data for different disciplines.
 - The testing phase for iRODS data cataloguing, metadata templating, and Globus data transfers is complete.
 - The impact of the completion of this milestone will be a searchable metadata catalogue of powerPlant _input_ data. This has progressed as far as the proof-of-concept (see the [milestone 5.2 report](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/tree/master/doc/milestones/milestone5/milestone_5.2_report.md)).
-
-**What is the impact?**
-
-Both sub-milestones have the potential to change the way Science is done, not just at PFR but also in the wider scientific community. Reproducibility is a hard problem to solve in computational science, particularly in a world with faster moving targets in terms of software delivery. By suggesting a working model that successfully contributes to simplify the problem, PFR would be in a leading position in the global community.
-
+- A Best practice platform has been developed (bestprctices.pfr.co.nz) which can be dynamically extended.
+- The integrationBoth sub-milestones have the potential to change the way Science is done, not just at PFR but also in the wider scientific community. Reproducibility is a hard problem to solve in computational science, particularly in a world with faster moving targets in terms of software delivery. By suggesting a working model that successfully contributes to simplify the problem, PFR would be in a leading position in the global community.
 
 **Milestone 7**
 
