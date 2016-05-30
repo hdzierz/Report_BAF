@@ -8,30 +8,17 @@
 - Globus file transfer is extremely efficient compared to traditional data transfer speeds via Plant and Food Research's internet connection. Globus is more than 100-times faster than the standard internet connection for file transfer.
 - A decision has been made to allow read/write access to all storage data from iRODS. This will be further controlled via the iRODS user management itself, which will leverage the existing POSIX user/group permissions.
 - Data stewards will need to be trained to use the iRODS metadata catalogue, both via the Metalnx interface, and via the iCommands (Linux command line).
+- In milestone 7 we considered multiple tools for exploration:
+ - Virtual computing provision platforms
+  - VMware vCloud Suite
+  - OpenStack
+  - OpenNebula
+ - Containerisation
+  - Docker
+  - Singularity
 
-**Milestone 7**
 
-This milestone has become part of BAF during project lifetime. WE tehrefore describe this milestine in more detail
-
-Milestone 7 is both a milestone within the Better Analysis Faster project, as well as a codename for PFR's powerPlant computational environment. As a purely IT infrastructure milestone, it does not depend on the development of management tools but rather on the adoption, configuration, administration, and coordination of multiple IT components.
-
-In Milestone 7.1, we describe a vision for Computational Science in which users are able to access self-contained units of compute in the form of disposable Virtual Machines, on a self-service fashion. This effectively means adopting cloud type services, as well as moving powerPlant towards IaaS (Infrastructure as a Service).
-
-With Milestone 7.2, the goal is to provide data analysis tools commonly used in powerPlant as containerised micro-services which can be built, versioned, shared, and re-used; with complete independence from the underlying Operating System. This would allow the scientific community to easily re-create and reproduce the computational environment used for a given research project, and would greatly simplify the peer-review process.
-
-Multiple tools have been considered for exploration:
-
-- Virtual computing provision platforms
- - VMware vCloud Suite
- - OpenStack
- - OpenNebula
-- Containerisation
- - Docker
- - Singularity
-
-They are explored in detail in the *Progress Towards Impact* section below.
-
-**What have we learned?**
+**What have we learned during the exploration process?**
 
 - Vendor support will be critical for the succesful implementation of either sub-milestone. This should translate not only in the adoption of IT best practices, but also in the avoidance of bespoke or custom-tailored solutions that would hinder portability and collaboration with external organisations.
 - During our investigations, it became clear that scientists will require a mechanism to publish the versioned images of either Virtual Machines or Containers used during analysis. It is already common practice to submit the raw data to public databases to facilitate the peer-review process. Demanding the exact copy of the analysis environment as well,  is a natural extension of this idea.
@@ -159,7 +146,30 @@ They are explored in detail in the *Progress Towards Impact* section below.
 
 # Detailed Report Milestone 7
 
-**Milestone 7**
+Milestone 7 is both a milestone within the Better Analysis Faster project, as well as a codename for PFR's powerPlant computational environment. As a purely IT infrastructure milestone, it does not depend on the development of management tools but rather on the adoption, configuration, administration, and coordination of multiple IT components.
+
+In Milestone 7.1, we describe a vision for Computational Science in which users are able to access self-contained units of compute in the form of disposable Virtual Machines, on a self-service fashion. This effectively means adopting cloud type services, as well as moving powerPlant towards IaaS (Infrastructure as a Service).
+
+With Milestone 7.2, the goal is to provide data analysis tools commonly used in powerPlant as containerised micro-services which can be built, versioned, shared, and re-used; with complete independence from the underlying Operating System. This would allow the scientific community to easily re-create and reproduce the computational environment used for a given research project, and would greatly simplify the peer-review process.
+
+Multiple tools have been considered for exploration:
+
+- Virtual computing provision platforms
+ - VMware vCloud Suite
+ - OpenStack
+ - OpenNebula
+- Containerisation
+ - Docker
+ - Singularity
+
+They are explored in detail in the *Progress Towards Impact* section below.
+
+**What have we learned?**
+
+- Vendor support will be critical for the succesful implementation of either sub-milestone. This should translate not only in the adoption of IT best practices, but also in the avoidance of bespoke or custom-tailored solutions that would hinder portability and collaboration with external organisations.
+- During our investigations, it became clear that scientists will require a mechanism to publish the versioned images of either Virtual Machines or Containers used during analysis. It is already common practice to submit the raw data to public databases to facilitate the peer-review process. Demanding the exact copy of the analysis environment as well,  is a natural extension of this idea.
+- We have also discovered that it was imperative to upgrade powerPlant to a newer Operating System if we were to succesfully test some of the tools listed above. Container technologies are bleeding edge and call for newer Linux kernels than the one powerPlant was running on. A considerable amount of time and resources were spent during this period to make this upgrade happen.
+
 
 **What progress have we made?**
 
