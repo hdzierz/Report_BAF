@@ -50,98 +50,8 @@ They are explored in detail in the *Progress Towards Impact* section below.
 - The impact of the completion of this milestone will be a searchable metadata catalogue of powerPlant _input_ data. This has progressed as far as the proof-of-concept (see the [milestone 5.2 report](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/tree/master/doc/milestones/milestone5/milestone_5.2_report.md)).
 - A Best practice platform has been developed (bestprctices.pfr.co.nz) which can be dynamically extended.
 - The integrationBoth sub-milestones have the potential to change the way Science is done, not just at PFR but also in the wider scientific community. Reproducibility is a hard problem to solve in computational science, particularly in a world with faster moving targets in terms of software delivery. By suggesting a working model that successfully contributes to simplify the problem, PFR would be in a leading position in the global community.
-
-**Milestone 7**
-
-**What progress have we made?**
-
-#### VMware vCloud Suite
-
-**URL:** https://www.vmware.com/products/vcloud-suite
-
-PFR's Virtual Infrastructure uses the VMware Hypervisor. It made sense therefore to explore this vendor's offerings in the self-service space. VMware provides a suite called vCloud. VMware vCloud Suite features components for cloud services provisioning, cloud services monitoring and cloud services chargeback, a self-service portal, an IT service catalog, and a policy engine. It comes in Standard, Advanced and Enterprise versions.
-
-Advantages:
-- Knowledge within PFR with VMware's products
-- Builds on top of existing PFR components
-- Good vendor reputation and support paths
-
-Disadvantages:
-- High cost
-- Locks users to the VMware Hypervisor only
-- No public cloud integration
-
-During PFR's implementation of our secondary DataCenter in Waikato, we had the opportunity to learn about both the cost and limitations of the vCloud Suite. While self-service was not explored as a requirement for that project, a decision was made against the Suite purely based on its high cost.
-
-In the context of Milestone 7.1, vCloud Suite lacks multi-hypervisor support which we consider a highly desirable feature. VMware tackles this and other limitations with their next tier product (VMware vRealize). We decided against exploring vRealize as we considered it unlikely to be cost effective.
-
-#### OpenStack
-
-**URL:** https://www.openstack.org/
-
-OpenStack is a free and open-source software platform for cloud computing, and a competing alternative to VMware's product portfolio. As is common in the open source software world, the product itself is free (both as in freedom and as in _free beer_) and multiple companies can provide support for it. The OpenStack Foundation is the non-profit organisation that manages the OpenStack product. Over 500 companies are currently part of this organisation.
-
-Advantages:
-- Knowledge within PFR of open-source solutions
-- Can build on top of existing PFR components
-- Good vendor reputation and support paths
-
-Disadvantages:
-- High complexity
-- Heterogeneous solution which can lead to fragmentation
-- Six-monthly release cycle
-
-RedHat and Canonical both offer products based on OpenStack. Since PFR already has commercial relations with the RedHat we invited them to a meeting. On November 27th 2015, Ben Warren and Eric Burgueño met with Steven Ellis and Mike Hepburn. After discussing our environment, requirements, and future vision; RedHat suggested that OpenStack was too complex of a solution for PFR, and that we would require to at least double our FTE count (from 2 to 4 FTEs) to support it accordingly. RedHat suggested we look into another product of theirs: CloudForms. We decided to take their suggestion on board for further exploration.
-
-#### OpenNebula
-
-**URL:** http://opennebula.org/
-
-OpenNebula is an alternative cloud computing platform to OpenStack, that is also free and open-source software. OpenNebula toutes itself as an open-source effort focused on user needs, while considering OpenStack a vendor-driven effort focused on the need of other vendors.
-
-Advantages:
-- Knowledge within PFR of open-source solutions
-- Can build on top of existing PFR components
-- Simpler setup and maintenance than OpenStack
-
-Disadvantages:
-- Fewer support alternatives
-- Unknown market share
-
-PFR deployed a PoC installation of OpenNebula using spare hardware with limited resources. The trial was operational for aproximately eight months, and allowed at least three staff members to explore its functionality in a "close to production" fashion.
-
-### Milestone 7.2
-#### Docker
-
-**URL:** https://www.docker.com
-
-Docker allows a user or an administrator to package an application with all of its dependencies, into a standardized unit which can be universally deployed. It does this by leveraging a combination of containerisation and resource management technologies present in modern Linux kernels. The quick speed of adoption of Docker by the IT industry can be attributed to the simplicity it brought to the management of containers.
-
-Advantages:
-- Knowledge within PFR of open-source solutions
-- Can build on top of existing PFR components
-- Good vendor reputation and support paths
-- High market share
-
-Disadvantages:
-- Rapidly changing and still maturing technology
-- Somewhat high complexity
-- Security and Operational Management challenges
-- Built by and for the Web Hosting industry
-
-PFR has adopted Docker in a PoC basis to further investigate how best to adapt it to its needs. At the present, 17 PFR users have been running Docker containers. We expect this number to increase with the release of powerPlant SE.
-
-#### Singularity
-
-**URL:** http://singularity.lbl.gov/
-
-Singularity is another container management toolkit, which can be used to encapsulate a system environment in such a manner to make it portable between systems. It distinguishes itself from Docker in that the two were created with different purposes in mind. From the [Singularity FAQ](http://singularity.lbl.gov/docs_faq.html)
-
-> Docker has been used for a variety of purposes, but it is designed as a platform to provide replicatable, network service virtualation. Because of this basic assumption and design model, it makes it difficult to implement on shared HPC platforms (and thus Singularity was born). Additionally, Docker supports the notion of emulating full operating system enviornments including user context escalation.
-
-> Singularity on the other hand does not support user escalation or context changes, nor does it have a root owned daemon process mananging the container namespaces. It also exec's the process workflow inside the container and seemlessly redirects all IO in and out of the container directly between the enviornments. This makes doing things like MPI, X11 forwarding, and other kinds of work tasks trivial for Singularity.
-
-During our Docker trials, the issues of [privilege escalation](https://github.com/PlantandFoodResearch/powerPlant/issues/315) and [complexity for end users](https://github.com/PlantandFoodResearch/powerPlant/issues/422#issuecomment-214544621) came up. Singularity was discovered as a potential solution for these problems, but we only knew about its existence in May 23rd 2016. Further research should go into it.
+- In milestone 7 we investigated virtual machine provision tools for implementation at PFR as there is a big demand from teh reseach community for more fexibility. We conducted a feasability study and compared options (see attachment).
+- We also implemented docker as a containirisation tool on powerPlant. This tool is increasingly used in the computational reseach community to provide research results and has been used already to provide the cheical database CAM and teh manual genome annotation initiative.
 
 ## Communication, Connections and Extension Activities
 
@@ -245,3 +155,98 @@ During our Docker trials, the issues of [privilege escalation](https://github.co
 - powerPlant: PFR's powerful computer cluster and more (powerplant.pfr.co.nz)
 - RNAseq: RNA next generatino sequencing project including gene expression analyses
 - CSS: Cascading style sheets (all web pages are styles using these style sheets)
+
+
+# Detailed Report Milestone 7
+
+**Milestone 7**
+
+**What progress have we made?**
+
+#### VMware vCloud Suite
+
+**URL:** https://www.vmware.com/products/vcloud-suite
+
+PFR's Virtual Infrastructure uses the VMware Hypervisor. It made sense therefore to explore this vendor's offerings in the self-service space. VMware provides a suite called vCloud. VMware vCloud Suite features components for cloud services provisioning, cloud services monitoring and cloud services chargeback, a self-service portal, an IT service catalog, and a policy engine. It comes in Standard, Advanced and Enterprise versions.
+
+Advantages:
+- Knowledge within PFR with VMware's products
+- Builds on top of existing PFR components
+- Good vendor reputation and support paths
+
+Disadvantages:
+- High cost
+- Locks users to the VMware Hypervisor only
+- No public cloud integration
+
+During PFR's implementation of our secondary DataCenter in Waikato, we had the opportunity to learn about both the cost and limitations of the vCloud Suite. While self-service was not explored as a requirement for that project, a decision was made against the Suite purely based on its high cost.
+
+In the context of Milestone 7.1, vCloud Suite lacks multi-hypervisor support which we consider a highly desirable feature. VMware tackles this and other limitations with their next tier product (VMware vRealize). We decided against exploring vRealize as we considered it unlikely to be cost effective.
+
+#### OpenStack
+
+**URL:** https://www.openstack.org/
+
+OpenStack is a free and open-source software platform for cloud computing, and a competing alternative to VMware's product portfolio. As is common in the open source software world, the product itself is free (both as in freedom and as in _free beer_) and multiple companies can provide support for it. The OpenStack Foundation is the non-profit organisation that manages the OpenStack product. Over 500 companies are currently part of this organisation.
+
+Advantages:
+- Knowledge within PFR of open-source solutions
+- Can build on top of existing PFR components
+- Good vendor reputation and support paths
+
+Disadvantages:
+- High complexity
+- Heterogeneous solution which can lead to fragmentation
+- Six-monthly release cycle
+
+RedHat and Canonical both offer products based on OpenStack. Since PFR already has commercial relations with the RedHat we invited them to a meeting. On November 27th 2015, Ben Warren and Eric Burgueño met with Steven Ellis and Mike Hepburn. After discussing our environment, requirements, and future vision; RedHat suggested that OpenStack was too complex of a solution for PFR, and that we would require to at least double our FTE count (from 2 to 4 FTEs) to support it accordingly. RedHat suggested we look into another product of theirs: CloudForms. We decided to take their suggestion on board for further exploration.
+
+#### OpenNebula
+
+**URL:** http://opennebula.org/
+
+OpenNebula is an alternative cloud computing platform to OpenStack, that is also free and open-source software. OpenNebula toutes itself as an open-source effort focused on user needs, while considering OpenStack a vendor-driven effort focused on the need of other vendors.
+
+Advantages:
+- Knowledge within PFR of open-source solutions
+- Can build on top of existing PFR components
+- Simpler setup and maintenance than OpenStack
+
+Disadvantages:
+- Fewer support alternatives
+- Unknown market share
+
+PFR deployed a PoC installation of OpenNebula using spare hardware with limited resources. The trial was operational for aproximately eight months, and allowed at least three staff members to explore its functionality in a "close to production" fashion.
+
+### Milestone 7.2
+#### Docker
+
+**URL:** https://www.docker.com
+
+Docker allows a user or an administrator to package an application with all of its dependencies, into a standardized unit which can be universally deployed. It does this by leveraging a combination of containerisation and resource management technologies present in modern Linux kernels. The quick speed of adoption of Docker by the IT industry can be attributed to the simplicity it brought to the management of containers.
+
+Advantages:
+- Knowledge within PFR of open-source solutions
+- Can build on top of existing PFR components
+- Good vendor reputation and support paths
+- High market share
+
+Disadvantages:
+- Rapidly changing and still maturing technology
+- Somewhat high complexity
+- Security and Operational Management challenges
+- Built by and for the Web Hosting industry
+
+PFR has adopted Docker in a PoC basis to further investigate how best to adapt it to its needs. At the present, 17 PFR users have been running Docker containers. We expect this number to increase with the release of powerPlant SE.
+
+#### Singularity
+
+**URL:** http://singularity.lbl.gov/
+
+Singularity is another container management toolkit, which can be used to encapsulate a system environment in such a manner to make it portable between systems. It distinguishes itself from Docker in that the two were created with different purposes in mind. From the [Singularity FAQ](http://singularity.lbl.gov/docs_faq.html)
+
+> Docker has been used for a variety of purposes, but it is designed as a platform to provide replicatable, network service virtualation. Because of this basic assumption and design model, it makes it difficult to implement on shared HPC platforms (and thus Singularity was born). Additionally, Docker supports the notion of emulating full operating system enviornments including user context escalation.
+
+> Singularity on the other hand does not support user escalation or context changes, nor does it have a root owned daemon process mananging the container namespaces. It also exec's the process workflow inside the container and seemlessly redirects all IO in and out of the container directly between the enviornments. This makes doing things like MPI, X11 forwarding, and other kinds of work tasks trivial for Singularity.
+
+During our Docker trials, the issues of [privilege escalation](https://github.com/PlantandFoodResearch/powerPlant/issues/315) and [complexity for end users](https://github.com/PlantandFoodResearch/powerPlant/issues/422#issuecomment-214544621) came up. Singularity was discovered as a potential solution for these problems, but we only knew about its existence in May 23rd 2016. Further research should go into it.
