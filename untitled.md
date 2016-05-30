@@ -1,9 +1,11 @@
 # Development of Advanced Knowledge, Data management tools and Capability 
 
 **Milestone 4**
+
 - A hierarchy of best data-management and best-practice documents were developed from [policy](https://iplant.plantandfood.co.nz/project/datamgmt/Documents/PFR%20Data%20Management%20Policy%20based%20on%20Lincoln%20Hub%20Template.docx) through [principles](https://github.com/PlantandFoodResearch/BestPractices/blob/master/Best_Practice_Documents.md) to [practice](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/BestPracticesForData.md) and [specifics](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/best_practices_excel_data_file.md)
 
 **Milestone 5**
+
 - The iRODS proof-of-concept instance has been created. Coupled with this is the Metalnx web interface for iRODS. 
 - A Globus end-point has been created, also coupled with the iRODS proof-of-concept instance. An additional tool has been developed to allow new users to register for access to the iRODS instance.
 - Data added to the file-system via iRODS is owned by the iRODS-server user. This will present a problem if this method is used to add data to the system. Hence adding data is best achieved via traditional file-system methods, after which the data can be added to the iRODS catalogue. The 2GB upload limit for the Metalnx interface is another good reason to use the file-system to add data. A best-practice should be created to cover this methodology.
