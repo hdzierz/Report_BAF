@@ -241,4 +241,4 @@ During our Docker trials, the issues of [privilege escalation](https://github.co
 - jekyll: A website generator from texts like GitHub Readmes
 - powerPlant: PFR's powerful computer cluster and more (powerplant.pfr.co.nz)
 - RNAseq: RNA next generatino sequencing project including gene expression analyses
-- 
+- CSS: Cascading style sheets (all web pages are styles using these style sheets)
