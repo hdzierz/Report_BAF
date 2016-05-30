@@ -26,7 +26,7 @@
 
 # Progress Towards Impact 
 
-- The largest impct of this project is the enhancement of communicatio between the research community and IKS. Particulalry the travel to North Carolina brought these two groups much closer together. A good sign was that Eric Burgeneo brought milestone 7 to the project which will make a big diference to how computational research ins done at PFR.
+- The largest impct of this project is the enhancement of communication between the research community and IKS. Particulalry the travel to North Carolina brought these two groups much closer together. A good sign was that Eric Burgeneo brought milestone 7 to the project which will make a big diference to how computational research ins done at PFR.
 - WE also achieved an increased awareness of the importance of data and its efficient management to PFR. This item is hard to prove. WE have to rely on th feedback we get from the reearch community which has only been positive so far.
 - Agreeing on, and formalising the principles and messages constitutes a major step forward.
 - Following these pribicples will make it now possible to work with clear purpose towards implementing these guiding principles.
@@ -60,8 +60,6 @@
 - Ben Warren connected with Steve Worth and the Metalnx development team during the BioIT World 2016 conference in Boston (April 2016). I provided feedback to them directly regarding Metalnx features and development. This solidified our relationship, improving PFR's standing as an important customer for the delivery of the Metalnx software, and also as a resource for testing/development for Metalnx in future.
 - I have communicated with Shannon Schlueter (UNCC bioinformatics) regarding implementation of the production iRODS instance, he offers expertise and further contacts with the iRODS development team.
 
-
-
 # Next steps What are the next steps required to maximise impact?  
 
 * Create a PFR wide strategy supported by our white paparer and recommendations of the Collaborative Data Management project
@@ -89,6 +87,8 @@
 
 # Outputs for 2015-16 
 
+**Direct outcomes:**
+
 *   Reshaping of the high performance compute environment at PFR to be compatible with the new vision (PowerPlant Release 2)
 *   Presentations including the Software Carpentry workshops, Best-Practice workshops, and international collaboration such as was done with UNCC and NC-State University in the North Carolina Biotechnology Corridor, USA
 *   The documents referenced in the first section above
@@ -98,7 +98,8 @@
 * The [process](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/blob/master/doc/milestones/milestone5/pfr-irods-test-setup-notes.md) developed for implementing iRODS server provided by Vladimir Mencl.
 * A [summary of Milestone 5.2](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/blob/master/doc/milestones/milestone5/summary_milestone_5.2.md), which includes decisions made and actions taken to complete this milestone.
 
--	Presentations
+**Presentations:**
+
   - At UNCC: ["The Neolution of the Machines"](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/blob/master/doc/presentations/eric/The%20Neolution%20of%20the%20Machines.pdf)
   - At LCA2016: ["The life of a sysadmin in a research environment"](http://sysadmin.miniconf.org/2016/lca2016-eric_burgueno-the_life_of_a_sysadmin_in_a_research_environment.pdf) ([Video](https://youtu.be/SiSY1b0am5w))
 - [Reprodcible Research as a Service](http://www.plantandfood.co.nz/file/J005841_SP_WarrenBen)
@@ -108,16 +109,13 @@
   - [powerPlant SE proposed Architecture](https://github.com/PlantandFoodResearch/powerPlant/blob/meta/proposals/CentOS%207%20architecture.md)
   - [Hybrid Cloud Support matrix](https://github.com/PlantandFoodResearch/powerPlant/blob/meta/proposals/Hybrid%20Cloud%20Support%20matrix.xlsx?raw=true)
 
-
-### Presentations
-
 - Data Management Workshop
 - eResearch
 - [Science Forum](http://bit.ly/1T3ZjEb)
 - Health Science Forum
 - Symposium at University North Carolina Charlotte
 
-### Reports and Documentation
+**Reports and Documentation:**
 
 - Informatics White Paper 
 - Travel report UNCC
