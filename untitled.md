@@ -201,10 +201,13 @@ During our Docker trials, the issues of [privilege escalation](https://github.co
 -	Presentations
   - At UNCC: ["The Neolution of the Machines"](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/blob/master/doc/presentations/eric/The%20Neolution%20of%20the%20Machines.pdf)
   - At LCA2016: ["The life of a sysadmin in a research environment"](http://sysadmin.miniconf.org/2016/lca2016-eric_burgueno-the_life_of_a_sysadmin_in_a_research_environment.pdf) ([Video](https://youtu.be/SiSY1b0am5w))
-
+- [Reprodcible Research as a Service](http://www.plantandfood.co.nz/file/J005841_SP_WarrenBen)
+- Meetings with Ben Warren an UNCC [Summary](https://gist.github.com/warrenson/7c745ed2a5b6700273cb)
+- Meeting of Ben Warren with scientists at teh BioIT conference [Summary](https://gist.github.com/warrenson/add1e9c288371f93b0f5)
 -	Proposal and Planning Documents
   - [powerPlant SE proposed Architecture](https://github.com/PlantandFoodResearch/powerPlant/blob/meta/proposals/CentOS%207%20architecture.md)
   - [Hybrid Cloud Support matrix](https://github.com/PlantandFoodResearch/powerPlant/blob/meta/proposals/Hybrid%20Cloud%20Support%20matrix.xlsx?raw=true)
+
 
 ### Presentations
 
