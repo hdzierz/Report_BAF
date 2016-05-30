@@ -21,6 +21,9 @@ We would like to take the opportunity and repeat some of our recommendations:
 - Data added to the file-system via iRODS is owned by the iRODS-server user. This will present a problem if this method is used to add data to the system. Hence adding data is best achieved via traditional file-system methods, after which the data can be added to the iRODS catalogue. The 2GB upload limit for the Metalnx interface is another good reason to use the file-system to add data. A best-practice should be created to cover this methodology.
 - Metalnx metadata templates can be 'stacked' (much like the [CSS](https://www.w3.org/Style/CSS/Overview.en.html) philosophy) allowing generic templates and specific template to be combined in a logical manner.
 - Globus file transfer is extremely efficient compared to traditional data transfer speeds via Plant and Food Research's internet connection. Globus is more than 100-times faster than the standard internet connection for file transfer.
+- A decision has been made to allow read/write access to all storage data from iRODS. This will be further controlled via the iRODS user management itself, which will leverage the existing POSIX user/group permissions.
+- Data stewards will need to be trained to use the iRODS metadata catalogue, both via the Metalnx interface, and via the iCommands (Linux command line).
+
 
 ## Milestone 7
 
@@ -70,6 +73,8 @@ We have also discovered that it was imperative to upgrade powerPlant to a newer 
 - Metalnx metadata templates can be created
 - Data can be catalogued in iRODS for testing
 - The testing phase for iRODS data cataloguing, metadata templating, and Globus data transfers is complete.
+- The impact of the completion of this milestone will be a searchable metadata catalogue of powerPlant _input_ data. This has progressed as far as the proof-of-concept (see the [milestone 5.2 report](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/tree/master/doc/milestones/milestone5/milestone_5.2_report.md)).
+
 
 -	What is the impact
 
@@ -187,6 +192,8 @@ At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He
 - Connections with UNCC bioinformatics and information technology staff were made during the research exchange last August 2015. This provided us with further expertise in the implementation of iRODS, and philosophies of data/metadata management.
 - Vladimir Mencl (NeSI) was contracted to install the iRODS proof of concept instance, he remains a point of contact for technical expertise in this area.
 - Ben Warren connected with Steve Worth and the Metalnx development team during the BioIT World 2016 conference in Boston (April 2016). I provided feedback to them directly regarding Metalnx features and development. This solidified our relationship, improving PFR's standing as an important customer for the delivery of the Metalnx software, and also as a resource for testing/development for Metalnx in future.
+- I have communicated with Shannon Schlueter (UNCC bioinformatics) regarding implementation of the production iRODS instance, he offers expertise and further contacts with the iRODS development team.
+
 
 
 # Next steps What are the next steps required to maximise impact?  
@@ -199,7 +206,9 @@ At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He
 * Investigation of Github Enterprise Edition
 * [Milestone 5.3](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/tree/master/doc/milestones/milestone5#milestone-53) embodies the next phase in this project. This entails the implementation of a production-level iRODS server instance, with the first official release of the Metalnx interface (version 1.0). We have yet to decide if the Globus end-point should reside on this iRODS instance, or be a separate entity.
 * An ontology of data-types and associated concepts will be created to guide metadata management implementation, specifically metadat templates for the Metalnx interface.
-
+* Complete the production implementation of iRODS+Metalnx, and possibly Globus.
+* Initiate the ontology of powerPlant input data-types.
+* Create and/or auto-generate metadata for existing data in powerPlant input data area. Beginning with the CHIPs team's _Malus domestica_ data.
 - Continue exploring alternatives for hybrid-cloud adoption
   - Re-evaluate the feasibility of OpenStack
   - Consider exploring CloudForms
