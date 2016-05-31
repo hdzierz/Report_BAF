@@ -44,7 +44,7 @@
 
 - As mentioned above, we were in touch with RedHat to discuss the feasibility of OpenStack for our environment. We have also touched on the topic of containers with them but we subjected follow-up discussions to the upgrade of our powerPlant cluster.
 - At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He mentioned the existence of a proposal to create a nation-wide pan-institution research network based on OpenStack. While the details of his proposal are confidential, it was implied that it hadn't gain enough traction nor consideration.
-- During our travel to UNCC North cCarolina we met and presented with:
+- During our travel to UNCC North Carolina we met and presented with:
  -IGV
  - Bioinfomratics Kaneapolis
  - Marian Lila
@@ -56,9 +56,9 @@
 - [Presentation SISSG](https://www.swipe.to/8227ct)
 - [Presentation Food Innovation](https://www.swipe.to/7988c)
 - Meeting about Ways of Working Auckland
-- Presentation at eResearch and lioaise with hmhmhm from Niwa, Nauman Maqbook from AgResearch, and Tatiana Lomasko form Scion. This provided a good echange of ideas around data management and resukted in a collaboration for an MBIE bid around nanao satellite data aquisition.
-- Presenttaion on Roadshow June 2016 (6x) to socialise our ideas.
-- Connections with UNCC bioinformatics and information technology staff were made during the research exchange last August 2015. This provided us with further expertise in the implementation of iRODS, and philosophies of data/metadata management.
+- Presentation at eResearch and liase with hmhmhm from Niwa, Nauman Maqbook from AgResearch, and Tatiana Lomasko from Scion. This provided a good exchange of ideas around data management and resulted in a collaboration for an MBIE bid around nano satellite data aquisition.
+- Presentation on Roadshow June 2016 (6x) to socialise our ideas.
+- Connections with UNCC bioinformatics and information technology staff were made during the research exchange last August 2015. This provided us with further expertise in the implementation of iRODS, and philosophies of data and metadata management.
 - Vladimir Mencl (NeSI) was contracted to install the iRODS proof of concept instance, he remains a point of contact for technical expertise in this area.
 - Ben Warren connected with Steve Worth and the Metalnx development team during the BioIT World 2016 conference in Boston (April 2016). I provided feedback to them directly regarding Metalnx features and development. This solidified our relationship, improving PFR's standing as an important customer for the delivery of the Metalnx software, and also as a resource for testing/development for Metalnx in future.
 - I have communicated with Shannon Schlueter (UNCC bioinformatics) regarding implementation of the production iRODS instance, he offers expertise and further contacts with the iRODS development team.
@@ -67,8 +67,8 @@
 
 * Create a PFR wide strategy supported by our white paparer and recommendations of the Collaborative Data Management project
 * PFR needs change management plan following e.g. the (10 principles of change management)[http://www.strategy-business.com/article/rr00006?gko=643d0].
-* This change process should comprise a digital content strategy.
-* Thes principles state that the change must be supported by the upper management and needs to incorporate the current cultural setup. 
+* This change process should elucidate and incoporate a digital content strategy.
+* These principles state that the change must be supported by the upper management and needs to embrace the cultural values of PFR. 
 * Part of this change management should be to continue building the foundation of best-practices across multiple content area.
 * Training, dissemination and implementation, using the best-practices a the "back-end" will be essential for better data management practices at PFR.
 * Finalise deployment of git documents to a PFR-wide available webpage using [Jekyll](https://jekyllrb.com/)
