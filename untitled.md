@@ -1,6 +1,22 @@
 # Development of Advanced Knowledge, Data management tools and Capability 
 
+**milestone 1 and 2**
+
+- Four focus areas have been determined: 
+- Witin these focus areas we hmhmhm data stewards.
+- A role description as developed for data as well as application stewards. This document will be proposed to the human resource department and our SMT for coinsideration.
+
+**milestone 3**
+
+- A data investigation was conducted. This investigation was on a higher level then teh data management eport by teh Collaborative Data Management project in order not to repeat work and irritate staff. The report will be published soon.
+
+**milestone 4**
+
 - A hierarchy of best data-management and best-practice documents were developed from [policy](https://iplant.plantandfood.co.nz/project/datamgmt/Documents/PFR%20Data%20Management%20Policy%20based%20on%20Lincoln%20Hub%20Template.docx) through [principles](https://github.com/PlantandFoodResearch/BestPractices/blob/master/Best_Practice_Documents.md) to [practice](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/BestPracticesForData.md) and [specifics](https://github.com/PlantandFoodResearch/BestPractices/blob/master/general/best_practices_excel_data_file.md)
+- In order to pubish these best practice documents we have developed a website platform and a process to pubish best practice documents (see next steps).
+
+**milestone 5**
+
 - The iRODS proof-of-concept instance has been created. Coupled with this is the Metalnx web interface for iRODS. 
 - A Globus end-point has been created, also coupled with the iRODS proof-of-concept instance. An additional tool has been developed to allow new users to register for access to the iRODS instance.
 - Data added to the file-system via iRODS is owned by the iRODS-server user. This will present a problem if this method is used to add data to the system. Hence adding data is best achieved via traditional file-system methods, after which the data can be added to the iRODS catalogue. The 2GB upload limit for the Metalnx interface is another good reason to use the file-system to add data. A best-practice should be created to cover this methodology.
@@ -8,6 +24,13 @@
 - Globus file transfer is extremely efficient compared to traditional data transfer speeds via Plant and Food Research's internet connection. Globus is more than 100-times faster than the standard internet connection for file transfer.
 - A decision has been made to allow read/write access to all storage data from iRODS. This will be further controlled via the iRODS user management itself, which will leverage the existing POSIX user/group permissions.
 - Data stewards will need to be trained to use the iRODS metadata catalogue, both via the Metalnx interface, and via the iCommands (Linux command line).
+
+**milestone 6**
+
+
+
+**milestone 7**
+
 - In milestone 7 we considered multiple tools for exploration:
  - Virtual computing provision platforms
   - VMware vCloud Suite
@@ -17,7 +40,6 @@
   - Docker
   - Singularity
 
-
 **What have we learned during the exploration process?**
 
 - Vendor support will be critical for the succesful implementation of either sub-milestone. This should translate not only in the adoption of IT best practices, but also in the avoidance of bespoke or custom-tailored solutions that would hinder portability and collaboration with external organisations.
@@ -26,8 +48,8 @@
 
 # Progress Towards Impact 
 
-- The largest impct of this project is the enhancement of communication between the research community and IKS. Particulalry the travel to North Carolina brought these two groups much closer together. A good sign was that Eric Burgeneo brought milestone 7 to the project which will make a big diference to how computational research ins done at PFR.
-- WE also achieved an increased awareness of the importance of data and its efficient management to PFR. This item is hard to prove. WE have to rely on th feedback we get from the reearch community which has only been positive so far.
+- The largest impact of this project is the enhancement of communication between the research community and IKS. Particulalry the travel to North Carolina brought these two groups much closer together. A good sign was that Eric Burgeneo brought milestone 7 to the project which will make a big diference to how computational research ins done at PFR.
+- We also achieved an increased awareness of the importance of data and its efficient management to PFR. This item is hard to prove. WE have to rely on th feedback we get from the reearch community which has only been positive so far.
 - Agreeing on, and formalising the principles and messages constitutes a major step forward.
 - Following these pribicples will make it now possible to work with clear purpose towards implementing these guiding principles.
 - The implementation of a Globus hub as well as powerPlant SE allows now to transfer data to/form PFR servers at much higher rates as from a user's desktop (up to 10-15MB/sec instead of 200-300KB/s).
@@ -44,24 +66,21 @@
 
 - As mentioned above, we were in touch with RedHat to discuss the feasibility of OpenStack for our environment. We have also touched on the topic of containers with them but we subjected follow-up discussions to the upgrade of our powerPlant cluster.
 - At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He mentioned the existence of a proposal to create a nation-wide pan-institution research network based on OpenStack. While the details of his proposal are confidential, it was implied that it hadn't gain enough traction nor consideration.
-- During our travel to UNCC North cCarolina we met and presented with:
- -IGV
- - Bioinfomratics Kaneapolis
- - Marian Lila
- - Shannon Schlueter
- - ...
-*   Liaised with other interested teams (e.g., [Achieving Collaborative Data Management](https://github.com/PlantandFoodResearch/CollaborativeDataManagement) and [biometrics](https://iplant.plantandfood.co.nz/biometrics)) and individuals
+
+*   We liaised with other interested teams (e.g., [Achieving Collaborative Data Management](https://github.com/PlantandFoodResearch/CollaborativeDataManagement) and [biometrics](https://iplant.plantandfood.co.nz/biometrics)) and individuals
 * Socialised the ideas informally and via tools such as [iPlant news](https://iplant.plantandfood.co.nz/bg/Pages/BestpracticesExceldatafiles.aspx)
 - [Presentatation Science Forum](http://bit.ly/1T3ZjEb)
 - [Presentation SISSG](https://www.swipe.to/8227ct)
 - [Presentation Food Innovation](https://www.swipe.to/7988c)
-- Meeting about Ways of Working Auckland
-- Presentation at eResearch and lioaise with hmhmhm from Niwa, Nauman Maqbook from AgResearch, and Tatiana Lomasko form Scion. This provided a good echange of ideas around data management and resukted in a collaboration for an MBIE bid around nanao satellite data aquisition.
+- We participated in a Ways of Working meeting follwing an invitation by John McMasters in Auckland.
+- We also participated in a workshop for generating a vision for powerPlant by invitation of teh CIO.
+- During the eResearch conference we had meetings with hmhmhm from Niwa, Nauman Maqbook from AgResearch, Nicole Ferguson from REANNZ, and Tatiana Lomasko form Scion. This provided a good exchange of ideas around data management as well as infrastructure provision and resulted in a collaboration for an MBIE bid around nano satellite data aquisition.
 - Presenttaion on Roadshow June 2016 (6x) to socialise our ideas.
 - Connections with UNCC bioinformatics and information technology staff were made during the research exchange last August 2015. This provided us with further expertise in the implementation of iRODS, and philosophies of data/metadata management.
 - Vladimir Mencl (NeSI) was contracted to install the iRODS proof of concept instance, he remains a point of contact for technical expertise in this area.
 - Ben Warren connected with Steve Worth and the Metalnx development team during the BioIT World 2016 conference in Boston (April 2016). I provided feedback to them directly regarding Metalnx features and development. This solidified our relationship, improving PFR's standing as an important customer for the delivery of the Metalnx software, and also as a resource for testing/development for Metalnx in future.
-- I have communicated with Shannon Schlueter (UNCC bioinformatics) regarding implementation of the production iRODS instance, he offers expertise and further contacts with the iRODS development team.
+- Ben Warren has communicated with Shannon Schlueter (UNCC bioinformatics) regarding implementation of the production iRODS instance, he offers expertise and further contacts with the iRODS development team.
+- We also had a phone conference in January 2016 with Shannon Schlueter's group to discuss their infrastruture and service provision setup. 
 
 # Next steps What are the next steps required to maximise impact?  
 
@@ -90,9 +109,8 @@
 
 # Outputs for 2015-16 
 
-**Direct outcomes:**
+**Direct outputs:**
 
-* Organised a symposium in Charlotte North Carolina in collaboration with UNCC. The symposium was sponsored by The Center for Biomedical Engineering and Science (CBES) New Zealand Institute for Plant & Food Research, LTD New Zealand International Research Fund, University of North Carolina at Charlotte, North Carolina Biotechnology Center, North Carolina Research Campus, and the Charlotte Research Institute
 *   Reshaping of the high performance compute environment at PFR to be compatible with the new vision (PowerPlant Release 2)
 *   Presentations including the Software Carpentry workshops, Best-Practice workshops, and international collaboration such as was done with UNCC and NC-State University in the North Carolina Biotechnology Corridor, USA
 *   The documents referenced in the first section above
@@ -121,15 +139,15 @@
 
 **Reports and Documentation:**
 
-- Informatics White Paper 
-- Travel report UNCC
-- Proposal for DS
+- From the North Carolina travel we developed an "Informatics White Paper". this paper contains recommendation around data management, infrastructre provision  and computational biology.
+- A travel report was also generated that describes our activities during our visit at UNCC and the Kanneapolis campus.
+- Out of BAF we developed three proposals for the dnew discovery science round:
   - The K-Drive
-  - hmhmhm
+  - oo
   - Blue Berry
 - Data Steward Role Document
-- Data Management Basics
-- Data Management Plan Document
+- A Data Management Basics documen was developed by teh Collabirative Data Management DS project in collaboratino with Better Analysis Faster.  
+- Data Management Plan Document was developed 
 - Best practices documents
     - Excel Data
     - GitHub for analyses
@@ -144,7 +162,7 @@
 - powerPlant: PFR's powerful computer cluster and more (powerplant.pfr.co.nz)
 - RNAseq: RNA next generatino sequencing project including gene expression analyses
 - CSS: Cascading style sheets (all web pages are styles using these style sheets)
-
+- CLI: Command line interface
 
 # Detailed Report Milestone 7
 
