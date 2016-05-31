@@ -89,6 +89,7 @@
 
 **Direct outcomes:**
 
+* Organised a symposium in Charlotte North Carolina in collaboration with UNCC. The symposium was sponsored by The Center for Biomedical Engineering and Science (CBES) New Zealand Institute for Plant & Food Research, LTD New Zealand International Research Fund, University of North Carolina at Charlotte, North Carolina Biotechnology Center, North Carolina Research Campus, and the Charlotte Research Institute
 *   Reshaping of the high performance compute environment at PFR to be compatible with the new vision (PowerPlant Release 2)
 *   Presentations including the Software Carpentry workshops, Best-Practice workshops, and international collaboration such as was done with UNCC and NC-State University in the North Carolina Biotechnology Corridor, USA
 *   The documents referenced in the first section above
