@@ -66,7 +66,7 @@
 # Next steps What are the next steps required to maximise impact?  
 
 * Create a PFR wide strategy supported by our white paparer and recommendations of the Collaborative Data Management project
-* PFR needs change management plan following e.g. the (10 principles of change management) \cite{10_Principles_of_Change_Management_2016-06-01}.
+* PFR needs change management plan following e.g. the 10 principles of change management \cite{10_Principles_of_Change_Management_2016-06-01}.
 * This change process should elucidate and incoporate a digital content strategy.
 * These principles state that the change must be supported by the upper management and needs to embrace the cultural values of PFR. 
 * Part of this change management should be to continue building the foundation of best-practices across multiple content area.
