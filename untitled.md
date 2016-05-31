@@ -44,9 +44,12 @@
 
 - As mentioned above, we were in touch with RedHat to discuss the feasibility of OpenStack for our environment. We have also touched on the topic of containers with them but we subjected follow-up discussions to the upgrade of our powerPlant cluster.
 - At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He mentioned the existence of a proposal to create a nation-wide pan-institution research network based on OpenStack. While the details of his proposal are confidential, it was implied that it hadn't gain enough traction nor consideration.
-
-# Communication, Connections and Extension Activities List activities during the reporting period directed towards your key stakeholders 
-
+- During our travel to UNCC North cCarolina we met and presented with:
+ -IGV
+ - Bioinfomratics Kaneapolis
+ - Marian Lila
+ - Shannon Schlueter
+ - ...
 *   Liaised with other interested teams (e.g., [Achieving Collaborative Data Management](https://github.com/PlantandFoodResearch/CollaborativeDataManagement) and [biometrics](https://iplant.plantandfood.co.nz/biometrics)) and individuals
 * Socialised the ideas informally and via tools such as [iPlant news](https://iplant.plantandfood.co.nz/bg/Pages/BestpracticesExceldatafiles.aspx)
 - [Presentatation Science Forum](http://bit.ly/1T3ZjEb)
