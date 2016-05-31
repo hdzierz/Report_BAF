@@ -71,7 +71,7 @@
 * These principles state that the change must be supported by the upper management and needs to embrace the cultural values of PFR. 
 * Part of this change management should be to continue building the foundation of best-practices across multiple content area.
 * Training, dissemination and implementation, using the best-practices a the "back-end" will be essential for better data management practices at PFR.
-* Finalise deployment of git documents to a PFR-wide available webpage using [Jekyll](https://jekyllrb.com/)
+* Finalise deployment of git documents to a PFR-wide available webpage using Jekyll \cite{Jekyll_2016-06-01}
 * Investigate ways of making Excel datafiles discoverable (e.g., a PFR-wide experiment database, integrating with [iRODS](http://irods.org/), text-mining)
 * On-going development of guidelines and best practices via the git model. This will have to be advertised by the management.
 * Investigation of Github Enterprise Edition
