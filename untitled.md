@@ -74,7 +74,7 @@
 - [Presentation Food Innovation](https://www.swipe.to/7988c)
 - We participated in a Ways of Working meeting follwing an invitation by John McMasters in Auckland.
 - We also participated in a workshop for generating a vision for powerPlant by invitation of teh CIO.
-- During the eResearch conference we had meetings with hmhmhm from Niwa, Nauman Maqbook from AgResearch, Nicole Ferguson from REANNZ, and Tatiana Lomasko form Scion. This provided a good exchange of ideas around data management as well as infrastructure provision and resulted in a collaboration for an MBIE bid around nano satellite data aquisition.
+- During the eResearch conference we had meetings with hmhmhm from Niwa, Nauman Maqbook from AgResearch, Nicole Ferguson anc Charles Yun from REANNZ, and Tatiana Lomasko form Scion. This provided a good exchange of ideas around data management as well as infrastructure provision and resulted in a collaboration for an MBIE bid around nano satellite data aquisition.
 - Presenttaion on Roadshow June 2016 (6x) to socialise our ideas.
 - Connections with UNCC bioinformatics and information technology staff were made during the research exchange last August 2015. This provided us with further expertise in the implementation of iRODS, and philosophies of data/metadata management.
 - Vladimir Mencl (NeSI) was contracted to install the iRODS proof of concept instance, he remains a point of contact for technical expertise in this area.
@@ -162,7 +162,7 @@
 - powerPlant: PFR's powerful computer cluster and more (powerplant.pfr.co.nz)
 - RNAseq: RNA next generatino sequencing project including gene expression analyses
 - CSS: Cascading style sheets (all web pages are styles using these style sheets)
-- CLI: Command line interface
+- CLI: Command line interface 
 
 # Detailed Report Milestone 7
 
