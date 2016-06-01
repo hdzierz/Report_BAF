@@ -20,7 +20,7 @@
 
 **What have we learned during the exploration process?**
 
-- Vendor support will be critical for the succesful implementation of either sub-milestone. This should translate not only in the adoption of IT best practices, but also in the avoidance of bespoke or custom-tailored solutions that would hinder portability and collaboration with external organisations.
+- Vendor support will be critical for the successful implementation of either sub-milestone. This should translate not only in the adoption of IT best practices, but also in the avoidance of bespoke or custom-tailored solutions that would hinder portability and collaboration with external organisations.
 - During our investigations, it became clear that scientists will require a mechanism to publish the versioned images of either Virtual Machines or Containers used during analysis. It is already common practice to submit the raw data to public databases to facilitate the peer-review process. Demanding the exact copy of the analysis environment as well,  is a natural extension of this idea.
 - We have also discovered that it was imperative to upgrade powerPlant to a newer Operating System if we were to succesfully test some of the tools listed above. Container technologies are bleeding edge and call for newer Linux kernels than the one powerPlant was running on. A considerable amount of time and resources were spent during this period to make this upgrade happen.
 
@@ -45,19 +45,18 @@
 - As mentioned above, we were in touch with RedHat to discuss the feasibility of OpenStack for our environment. We have also touched on the topic of containers with them but we subjected follow-up discussions to the upgrade of our powerPlant cluster.
 - At the LCA 2016 conference, we touched base with Bruno Lago from Catalyst IT. He mentioned the existence of a proposal to create a nation-wide pan-institution research network based on OpenStack. While the details of his proposal are confidential, it was implied that it hadn't gain enough traction nor consideration.
 - During our travel to UNCC North Carolina we met and presented with:
- -IGV
- - Bioinfomratics Kaneapolis
- - Marian Lila
- - Shannon Schlueter
- - ...
+ - the Anne Lorain Lab. We discussed genome browsing and software project management.
+ - the Kanneqapolis Bioinformatics team. We presented and discussed bioinfomratics and big data management.
+ - Marian Lila and her team. Marian is well known to PFR. She showed us her food innovation lab.
+ - Shannon Schlueter from UNCC. He developed a infrastructure provision platform using latest tools like Hadoop. We discussed their provision setup as a service to researchers.
 *   Liaised with other interested teams (e.g., [Achieving Collaborative Data Management](https://github.com/PlantandFoodResearch/CollaborativeDataManagement) and [biometrics](https://iplant.plantandfood.co.nz/biometrics)) and individuals
 * Socialised the ideas informally and via tools such as [iPlant news](https://iplant.plantandfood.co.nz/bg/Pages/BestpracticesExceldatafiles.aspx)
 - [Presentatation Science Forum](http://bit.ly/1T3ZjEb)
 - [Presentation SISSG](https://www.swipe.to/8227ct)
 - [Presentation Food Innovation](https://www.swipe.to/7988c)
-- Meeting about Ways of Working Auckland
-- Presentation at eResearch and liase with hmhmhm from Niwa, Nauman Maqbook from AgResearch, and Tatiana Lomasko from Scion. This provided a good exchange of ideas around data management and resulted in a collaboration for an MBIE bid around nano satellite data aquisition.
-- Presentation on Roadshow June 2016 (6x) to socialise our ideas.
+- We attended a meeting about Ways of Working Auckland. We discussed infrastrcutural needs with our organisation. 
+- Presentation at eResearch and liase with Andrew Watkins (general manager - Information Technology, Niwa), Nauman Maqbool (Group Leader Knowledge & Analytics, AgResearch), and Tatiana Lomasko (	
+Science to Business Network, Ontario Institute for Cancer Research, University of Toronto, then SCION). This provided a good exchange of ideas around data management and resulted in a collaboration for an MBIE bid around nano satellite data aquisition. 
 - Connections with UNCC bioinformatics and information technology staff were made during the research exchange last August 2015. This provided us with further expertise in the implementation of iRODS, and philosophies of data and metadata management.
 - Vladimir Mencl (NeSI) was contracted to install the iRODS proof of concept instance, he remains a point of contact for technical expertise in this area.
 - Ben Warren connected with Steve Worth and the Metalnx development team during the BioIT World 2016 conference in Boston (April 2016). I provided feedback to them directly regarding Metalnx features and development. This solidified our relationship, improving PFR's standing as an important customer for the delivery of the Metalnx software, and also as a resource for testing/development for Metalnx in future.
@@ -65,7 +64,8 @@
 
 # Next steps What are the next steps required to maximise impact?  
 
-* Create a PFR wide strategy supported by our white paparer and recommendations of the Collaborative Data Management project
+One of the implied aims of this project was to initiate a change process within the organisation. Change management requires the involvement of the upper management particularly the CEO \cite{10_Principles_of_Change_Management_2016-06-01}. We  therefore concentrated on laying the (technical) basis for such a change management. We also addressed the need for cultural change by socialising our ideas with the research community. However, we believe the following steps will be necessary if a effective data management is to succeed:
+
 * PFR needs change management plan following e.g. the 10 principles of change management \cite{10_Principles_of_Change_Management_2016-06-01}.
 * This change process should elucidate and incoporate a digital content strategy.
 * These principles state that the change must be supported by the upper management and needs to embrace the cultural values of PFR. 
@@ -74,6 +74,7 @@
 * Finalise deployment of git documents to a PFR-wide available webpage using Jekyll \cite{Jekyll_2016-06-01}
 * Investigate ways of making Excel datafiles discoverable (e.g., a PFR-wide experiment database, integrating with [iRODS](http://irods.org/), text-mining)
 * On-going development of guidelines and best practices via the git model. This will have to be advertised by the management.
+* Finalise the data management "persuasion" document for the definition of data and application sterwrds as well as the hdata management coordinator.   
 * Investigation of Github Enterprise Edition
 * [Milestone 5.3](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/tree/master/doc/milestones/milestone5#milestone-53) embodies the next phase in developing powerPlant SE further. This entails the implementation of a production-level iRODS server instance, with the first official release of the Metalnx interface (version 1.0). We have yet to decide if the Globus end-point should reside on this iRODS instance, or be a separate entity.
 * An ontology of data-types and associated concepts will be continued to guide metadata management implementation, specifically metadat templates for the Metalnx interface.
@@ -87,20 +88,20 @@
 - Deepen the usage of Docker where appropriate in our research environment
 - Explore the feasibility of Singularity
 
-
 # Outputs for 2015-16 
 
 **Direct outcomes:**
 
 * Organised a symposium in Charlotte North Carolina in collaboration with UNCC. The symposium was sponsored by The Center for Biomedical Engineering and Science (CBES) New Zealand Institute for Plant & Food Research, LTD New Zealand International Research Fund, University of North Carolina at Charlotte, North Carolina Biotechnology Center, North Carolina Research Campus, and the Charlotte Research Institute
-*   Reshaping of the high performance compute environment at PFR to be compatible with the new vision (PowerPlant Release 2)
-*   Presentations including the Software Carpentry workshops, Best-Practice workshops, and international collaboration such as was done with UNCC and NC-State University in the North Carolina Biotechnology Corridor, USA
-*   The documents referenced in the first section above
-*   A growing list of 'Best Practice" documents across multiple domains that is addressing the question of "How do we do that here at PFR?"
+* Reshaping of the high performance compute environment at PFR to be compatible with the new vision (PowerPlant Release 2)
+* Presentations including the Software Carpentry workshops, Best-Practice workshops, and international collaboration such as was done with UNCC and NC-State University in the North Carolina Biotechnology Corridor, USA
+* The documents referenced in the first section above
+* A growing list of 'Best Practice" documents across multiple domains that is addressing the question of "How do we do that here at PFR?"
 * Presentation at the UNCC Research Exchange covering metadata/data management, solutions and principles.
 * Feedback from the CHIPs team on the Metalnx user interface, metadata management policies, and data types produced by PFR scientists.
 * The [process](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/blob/master/doc/milestones/milestone5/pfr-irods-test-setup-notes.md) developed for implementing iRODS server provided by Vladimir Mencl.
 * A [summary of Milestone 5.2](https://github.com/PlantandFoodResearch/BetterAnalysisFaster/blob/master/doc/milestones/milestone5/summary_milestone_5.2.md), which includes decisions made and actions taken to complete this milestone.
+* A documwent draft for the role definitions of data stewards, application stewards as well as a data management coordinator
 
 **Presentations:**
 
@@ -113,10 +114,10 @@
   - [powerPlant SE proposed Architecture](https://github.com/PlantandFoodResearch/powerPlant/blob/meta/proposals/CentOS%207%20architecture.md)
   - [Hybrid Cloud Support matrix](https://github.com/PlantandFoodResearch/powerPlant/blob/meta/proposals/Hybrid%20Cloud%20Support%20matrix.xlsx?raw=true)
 
-- Data Management Workshop
-- [eResearch](eresearch2016.org.nz)
-- [Science Forum](http://bit.ly/1T3ZjEb)
-- Food innovation science forum
+- Presentation at the data management workshop \site{dzierzon_storey_15}
+- Presentation at the [eResearch](eresearch2016.org.nz) conference 2016
+- Presenttaioh at the PFR [Science Forum](http://bit.ly/1T3ZjEb)
+- Presenttaiho at the Food innovation science forum
 - [Symposium at University North Carolina Charlotte](https://iplant.plantandfood.co.nz/project/datamgmt/Documents/Forms/AllItems.aspx)
 
 **Reports and Documentation:**
@@ -124,14 +125,14 @@
 - Informatics White Paper 
 - Travel report UNCC
 - Proposal for DS
-  - The K-Drive
-  - hmhmhm
-  - Blue Berry
-- Data Steward Role Document
-- Data Management Basics
-- Data Management Plan Document
+  - Automate it! (DS 16-58)
+  - Scan our historical data! (DS 16-57)
+  - Discovering the Super Blueberry (not invited)
+- Draft of a Data Steward Role Document
+- Contributed to the Data Management Basics document
+- Data Management Plan Document for inclusion into project pland in B&G 
 - Best practices documents
-    - Excel Data
+    - Excel Data Sheets
     - GitHub for analyses
     - Linux Command Line Interface (CLI)
     - RNAseq experiments
